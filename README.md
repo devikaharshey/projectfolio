@@ -1,6 +1,6 @@
 # ProjectFolio
 
-ProjectFolio is a web application built with [Next.js](https://nextjs.org), a React framework that allows for server-side rendering and generating static websites for React-based web applications.
+My project "Projectfolio-A portfolio of the projects!" is designed to guide others through the process of building successful web development projects. It emphasizes the importance of choosing the right tech stack, understanding core concepts, and utilizing GitHub for version control and project management. Through a selection of six featured projects, I demonstrate the techniques and strategies I’ve learned, offering insights on how to approach, build, and showcase web development projects effectively.
 
 ## 📑 Index
 
