@@ -2,7 +2,7 @@
 import React from "react";
 import { ContainerScroll } from "@/pages/components/ContainerScroll";
 import Image from "next/image";
-import {TextGenerateEffect} from "@/pages/components/TextGenerate";
+import { TextGenerateEffect } from "@/pages/components/TextGenerate";
 
 export function ProjectHome() {
     return (
@@ -14,7 +14,7 @@ export function ProjectHome() {
                             And last but not least..
                         </p>
                         <TextGenerateEffect
-                            words="Github: The Project Home"
+                            words="Github: The Project Home" // Ensure this is a valid string
                             className="flex items-center justify-center relative z-0 px-4 md:px-0 pb-5 md:pb-0"
                         />
                     </>
