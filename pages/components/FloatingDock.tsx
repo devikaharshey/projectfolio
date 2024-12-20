@@ -11,10 +11,10 @@ import {
 import React, { useRef, useState } from "react";
 
 export const FloatingDock = ({
-                                 items,
+                                 items = [], // Default to an empty array
                                  className,
                              }: {
-    items: { title: string; icon: React.ReactNode }[];
+    items?: { title: string; icon: React.ReactNode }[]; // Make `items` optional
     className?: string;
 }) => {
     const mouseX = useMotionValue(Infinity);
@@ -29,7 +29,7 @@ export const FloatingDock = ({
                 className
             )}
         >
-            {items.map((item) => (
+            {Array.isArray(items) && items.map((item) => (
                 <IconContainer mouseX={mouseX} key={item.title} {...item} />
             ))}
         </div>
@@ -52,7 +52,6 @@ function IconContainer({
         return val - bounds.x - bounds.width / 2;
     });
 
-    // Increased icon size range
     const widthTransform = useTransform(distance, [-135, 0, 135], [35, 55, 35]); // larger icon size
     const heightTransform = useTransform(distance, [-135, 0, 135], [35, 55, 35]); // larger icon size
 
