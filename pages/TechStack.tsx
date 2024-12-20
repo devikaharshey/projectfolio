@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { FloatingDock } from "@/pages/components/FloatingDock";
 import { TextGenerateEffect } from "@/pages/components/TextGenerate";
-import {Spotlight} from "@/pages/components/Spotlight";
+import { Spotlight } from "@/pages/components/Spotlight";
 import Image from "next/image";
+import { FloatingDock } from "@/pages/components/FloatingDock";
 
 export function TechStack() {
     const links = [
@@ -37,7 +37,7 @@ export function TechStack() {
                     The tech stack that brings my projects to life!
                 </p>
                 <Spotlight className="absolute h-[60vh] w-[60vw] bottom-0 right-0 left-full" fill="skyblue" />
-                <FloatingDock items={links} />
+                <FloatingDock items={Array.isArray(links) ? links : []} />
             </div>
         </div>
     );
