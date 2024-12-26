@@ -88,7 +88,3 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify it as needed to better fit your project!
